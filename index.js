@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 8000; // actual websites run on port 80
 const expressLayouts = require('express-ejs-layouts');
+const db = require('./config/mongoose');
 
 app.use(express.static('./assets'));
 app.use(expressLayouts);
@@ -18,4 +19,4 @@ app.listen(port, function (err) {
   } else {
     console.log(`SUCCESS Server running on port: ${port}`);
   }
-});
+})

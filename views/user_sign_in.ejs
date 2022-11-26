@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/user_sign_in.css" />
+
+<form method="post" action="/users/create-session" id="sign-in-form" class="d-flex flex-column">
+  <div class="form-floating mb-3">
+    <input
+    name="email"
+      type="email"
+      class="form-control"
+      id="floatingEmail"
+      placeholder="name@example.com"
+      required
+    />
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input
+    name="password"
+      type="password"
+      class="form-control"
+      id="floatingPassword"
+      placeholder="Password"
+      required
+    />
+    <label for="floatingPassword">Password</label>
+  </div>
+  <div class="d-flex flex-column align-items-center">
+    <button type="button" class="btn btn-primary mb-2">Sign-In</button>
+    <p>
+      If you do not have account, please <a href="/users/sign-up">sign-up</a>.
+    </p>
+  </div>
+</form>

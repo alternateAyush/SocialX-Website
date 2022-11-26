@@ -1,4 +1,7 @@
 body{
-    text-align: center;
-    color: yellow;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }

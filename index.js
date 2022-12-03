@@ -4,8 +4,9 @@ const port = 8000; // actual websites run on port 80
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
 const cookieParser = require('cookie-parser');
+const bodyParser = require("body-parser");
 
-app.use(express.urlencoded());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(express.static('./assets'));

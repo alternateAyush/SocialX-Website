@@ -1,3 +1,60 @@
-body{
-    color: red;
+body {
+  color: black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
+body #home-container {
+  padding: 5px 10px;
+  padding-left: 20px;
+  padding-bottom: 60px;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+body #home-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+body #home-container #new-post-form {
+  width: 510px;
+}
+body #home-container .post-comments-form {
+  width: 410px;
+}
+body #home-container .form-floating {
+  margin: 5px;
+  margin-left: 0px;
+  z-index: 0;
+}
+body #home-container #new-post-content {
+  height: 100px;
+  width: 500px;
+}
+body #home-container #new-comment-content {
+  width: 400px;
+}
+body #home-container .home-component {
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+body #home-container #user-friends {
+  width: 20%;
+}
+body #home-container #feed-posts {
+  width: 80%;
+  padding: 10px;
+}
+body #home-container .post-user-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+/*# sourceMappingURL=home.css.map */

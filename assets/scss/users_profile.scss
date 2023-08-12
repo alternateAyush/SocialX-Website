@@ -1,0 +1,21 @@
+body{
+    color: green;
+    #profile-edit-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 500px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 5px;
+        input{
+            margin: 5px 0px;
+        }
+        .btn{
+            width: 50%;
+        }
+    }
+
+}
+//sass scss/users_profile.scss:css/users_profile.css

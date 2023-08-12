@@ -1,0 +1,11 @@
+<li>
+  <p>
+    <% if(locals.user && (comment.user.id==locals.user.id ||
+    post.user.id==locals.user.id)){ %>
+    <span><a href="/comments/destroy/<%= comment.id %>"> x </a></span>
+    <% } %>
+    <img class="post-user-img" src="<%=comment.user.avatar%>" alt="<%comment.user.name%>">
+    <span><%= comment.user.name %>: </span>
+    <span><%= comment.content %> </span>
+  </p>
+</li>

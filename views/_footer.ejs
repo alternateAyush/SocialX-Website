@@ -1,1 +1,7 @@
-<footer class="mt-3">Common Footer</footer>
+<link rel="stylesheet" href="/css/footer.css" />
+<footer>
+    <% if(locals.user){ %> 
+    <span><a href="/">Home</a> | <a href="/users/profile/<%=locals.user.id%> ">Profile</a></span>
+    <% } %> 
+    <span>© SocialX. All rights reserved.</span>
+</footer>

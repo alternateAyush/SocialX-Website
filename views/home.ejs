@@ -1,2 +1,36 @@
-<link rel="stylesheet" href="/css/home.css">
-<h1>SocialX/<%= title %></h1>
+<link rel="stylesheet" href="/css/home.css" />
+
+<div id="home-container">
+  <section id="feed-posts" class="home-component">
+    <h4>Posts</h4>
+    <% if(locals.user){ %>
+    <form action="/posts/create" id="new-post-form" method="post">
+      <div class="form-floating">
+        <textarea
+          name="content"
+          id="new-post-content"
+          placeholder="Type here..."
+          class="form-control"
+        ></textarea>
+        <label for="new-post-content">Post</label>
+      </div>
+      <input type="submit" value="Post" class="btn btn-primary"/>
+    </form>
+    <% } %>
+    <div id="posts-list-container">
+      <ul type="none">
+        <% for(post of posts){ %> <%- include('_post')-%> <% } %>
+      </ul>
+    </div>
+  </section>
+  <section id="user-friends" class="home-component">
+    <h4>Friends</h4>
+    <ul type="none">
+      <% for(u of all_users) {%>
+      <p><a href="/users/profile/<%= u.id %>"><img class="post-user-img" src="<%=u.avatar%>" alt="<%u.name%>"><%=u.name%></a></p>
+      <% } %>
+    </ul>
+  </section>
+</div>
+
+<script src="/js/home_posts.js"></script>

@@ -1,0 +1,36 @@
+//sass scss/header.scss:css/header.css
+#head{
+    margin: 0px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: rgb(28,150,232);
+    color: white;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    header{
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 20px;
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+    }
+    li{
+        display: inline-block;
+        margin: 0px 5px;
+        a{
+           text-decoration: none;
+           color: white;
+        }
+    }
+}

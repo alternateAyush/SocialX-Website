@@ -1,0 +1,24 @@
+#sign-up-form{
+    margin: 60px 0px 0px 10px;
+    width: 30vw;    
+}
+#google-sign{
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 175px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 5px;
+    font-weight: bold;
+    border: 1px solid rgb(66, 66, 221);
+    border-radius: 10px;
+    i{
+        font-size: 1.3rem;
+        color: red;
+    }
+}
+//sass scss/user_sign_up.scss:css/user_sign_up.css

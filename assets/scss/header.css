@@ -1,0 +1,35 @@
+#head {
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  background-color: rgb(28, 150, 232);
+  color: white;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+#head header {
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 20px;
+}
+#head ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+#head li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+#head li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=header.css.map */

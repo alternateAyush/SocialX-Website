@@ -1,0 +1,60 @@
+body{
+    color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box; 
+    #home-container{
+        padding: 5px 10px;
+        padding-left: 20px;
+        padding-bottom: 60px;
+        width: 100vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        #new-post-form{
+            width: 510px;
+        }
+        .post-comments-form{
+            width: 410px;
+        }
+        .form-floating{
+            margin: 5px;
+            margin-left: 0px;
+            z-index: 0;
+        }
+        #new-post-content{
+            height: 100px;
+            width: 500px;            
+        }
+        #new-comment-content{
+            width: 400px;
+        }
+        .home-component{
+            margin-top: 50px;  
+            box-sizing: border-box;      
+        }
+        #user-friends{
+            width: 20%;        
+        }
+        #feed-posts{
+            width: 80%;
+            padding: 10px; 
+             
+        }
+        .post-user-img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: 2px;
+        }
+    }    
+}
+//sass scss/home.scss:css/home.css

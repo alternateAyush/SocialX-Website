@@ -1,2 +1,19 @@
 <link rel="stylesheet" href="/css/users_profile.css">
 <h1>SocialX/Users/<%= title %></h1>
+
+<img src="<%= user.avatar%>" alt="<%= user.name%>" height="150px" width="130px">
+
+<% if(user.id==profile_user.id){ %>
+    <form action="/users/update/<%=profile_user.id%>" id="profile-edit-form" method="POST" enctype="multipart/form-data">        
+        <input class="form-control" name="name" type="text" placeholder="Your Name" aria-label="Your Name" value="<%=profile_user.name%>" required>
+        <input class="form-control" name="email" type="email" placeholder="Your E-mail" aria-label="Your E-mail" value="<%=profile_user.email%>" required>
+        <input name="avatar" placeholder="Profile Picture" type="file">
+        <input type="submit" class="btn btn-primary" value="Update"></input>
+    </form>
+
+<%}else{ %>
+    <p><%= profile_user.name %> </p>
+    <p><%= user %> </p>
+    <p><%= profile_user.email %> </p>
+<%} %>  
+

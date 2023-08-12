@@ -1,3 +1,21 @@
-body{
-    color: green;
+body {
+  color: green;
 }
+body #profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 5px;
+}
+body #profile-edit-form input {
+  margin: 5px 0px;
+}
+body #profile-edit-form .btn {
+  width: 50%;
+}
+
+/*# sourceMappingURL=users_profile.css.map */
